@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Carga FTP</title>
-    <link rel="stylesheet" href="../assets/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TrueNAS — FTP</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
 </head>
 <body>
-    <div class="container">
-        <h2>Módulo de Carga: FTP</h2>
-        
-        <input type="file" id="filePicker">
-        
-        <button onclick="subirArchivo('ftp')" id="btnEnviar">Enviar a TrueNAS</button>
-        
-        <p id="mensaje"></p>
-        <br>
-        <a href="../index.html">⬅ Volver al Panel Principal</a>
-    </div>
+<div class="container">
 
-    <script src="../assets/app.js"></script>
+  <p class="eyebrow">Módulo 01</p>
+  <h2>Carga vía <em>FTP</em></h2>
+
+  <div class="divider">
+    <span></span><span class="diamond"></span><span></span>
+  </div>
+
+  <div class="inner-box">
+    <div class="corner-tr"></div>
+    <div class="corner-bl"></div>
+
+    <input type="file" id="filePicker">
+    <button id="btnEnviar" onclick="subirArchivo('ftp')">
+      <span>Enviar a TrueNAS</span>
+    </button>
+    <p id="mensaje"></p>
+  </div>
+
+  <a href="../index.html" class="back-link">← Panel principal</a>
+</div>
+<script src="../assets/app.js"></script>
 </body>
 </html>
